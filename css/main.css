@@ -1,0 +1,559 @@
+
+:root{
+    --main-color:#2c4964ed;
+    --sec-color:#388fdc;
+}
+
+/* Global attributes*/
+*{
+    text-decoration: none;
+    list-style: none;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+}
+span{
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Alegreya', serif;
+    color: var(--main-color);
+}
+.m-90{
+    margin-top: -90px;
+}
+.m-30{
+    margin-top: 30px;
+}
+.main-btn{
+    background-color: var(--sec-color);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 12px 35px;
+    transition: 0.5s all;
+}
+.main-btn:hover{
+    background-color: #3890dcaa;
+}
+/* start navbar */
+nav .nav-item{
+    padding-inline: 12px;
+}
+nav .navbar-brand{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+nav .nav-link{
+    color: var(--main-color) !important;
+    transition: 0.5s all;
+    position: relative;
+}
+nav .nav-link:hover{
+    color: var(--sec-color) !important;
+}
+nav .container .nav-link::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    background-color: var(--sec-color);
+    transition: 0.4s ease-in-out;
+  }
+  
+  nav .container .nav-link:hover::before {
+    width: 80%;
+  }
+  
+  nav .container .active::before {
+    width: 80%;
+  }
+nav button{
+    background-color: var(--sec-color);
+}
+/* end navbar */
+
+
+/* Start Header*/
+#Header{
+    background-image: url(../img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+   
+}
+#Header .header-content{
+padding-block: 20px;
+color: var(--main-color);
+font-family: 'Alegreya', serif;
+}
+#Header .header-content h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+/* EndHeader*/
+
+
+/* start why us */
+#why-us .content{
+    background-color: var(--sec-color);
+}
+#why-us .content button{
+    background-color: var(--main-color)
+}
+#why-us .content button:hover{
+    background-color: white;
+    color: var(--sec-color);
+
+}
+#why-us .another-content i{
+    color: var(--sec-color);
+    font-size: 30px;
+}
+/* End why us */
+
+
+/* start about */
+
+
+#about{
+    margin-top: 30px;
+}
+
+#about .about-list span i{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--sec-color);
+    border-radius: 50%;
+    color: var(--sec-color);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+
+}
+#about .about-list h6{
+    color: black;
+    transition: 0.5s all;
+}
+#about .about-list h6:hover{
+    color: var(--sec-color);
+}
+#about .about-list:hover i{
+    background-color: var(--sec-color);
+    color: white;
+}
+/* end about */
+
+
+/* start counter */
+
+#counter{
+    background-color: #e5edf5;
+    width: 100%;
+    height: 90%;
+    padding: 50px;
+}
+#counter .counter-item {
+    position: relative;
+}
+#counter .counter-item span{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#counter .counter-item p{
+    font-weight: 200;
+}
+#counter .counter-item i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--sec-color);
+    color: white;font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End counter */
+
+/* start services */
+
+#services .services-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#services .services-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#services .services-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#services .services-item{
+    border: 1px solid #388fdc;
+    background-color: white;
+    padding: 30px;
+    transition: 0.5s all;
+}
+
+#services .services-item i{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: var(--sec-color);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+    box-shadow:5px 10px rgba(25, 119, 204, 0.2);;
+  
+}
+#services .services-item span{
+    position: relative;
+}
+#services .services-item a{
+    color: var(--main-color);
+    transition: 0.5s all;
+}
+#services .services-item:hover a{
+    color: white;
+}
+#services .services-item:hover{
+    color: white;
+    background-color: var(--sec-color);
+}
+#services .services-item:hover i{
+    background-color: white;
+    color: var(--sec-color);
+    box-shadow: 5px 10px #73b9f6 ;
+}
+/* End services */
+
+/* start appointment */
+
+#appointment{
+    background-color:  #e5edf5;
+    padding: 50px;
+}
+#appointment .appoint-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#appointment .appoint-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#appointment .appoint-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+ #appointment .appoint-form .form-control:focus {
+    border-color: #1977cc!important;
+}
+#appointment button{
+    margin-top: 20px;
+}
+#appointment .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #054db8;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+/* End appointment */
+
+/* start department */
+
+#departments .depart-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#departments .depart-title  h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#departments .depart-title  h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#departments .nav-link .active{
+    color: var(--main-color);
+}
+#departments .nav-link{
+    border: 0;
+    padding: 12px 15px 12px 0;
+    border-radius: 0;
+    border-right: 2px solid #ebf1f6;
+    font-weight: 600;
+    font-size: 15px;
+}
+/* End department */
+
+/* start doctors */
+#doctors{
+    padding-bottom: 60px;
+}
+#doctors .doctors-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#doctors .doctors-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#doctors .doctors-title  h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#doctors .w-10{
+    width: 50%;
+}
+#doctors a{
+    text-decoration: none;
+}
+#doctors .member-info span{
+    position: relative;
+}
+#doctors .member-info span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b2c8dd;
+    bottom: 0;
+    left: 0;
+}
+#doctors .member-social i{
+    padding-inline: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: #a0bcd5;
+    color: white;
+    line-height: 2; 
+    transition: 0.5 all;  
+}
+#doctors .member-social i:hover{
+    background-color: #388fdc;
+}
+#doctors .member-info{
+    margin-left: -90px;
+}
+#doctors img{
+    transition: 0.8s all ease-in-out;
+}
+#doctors .doctor-member:hover img{
+    scale: 1.1;
+}
+/* End doctors */
+
+
+/* start question */
+
+
+#questions{
+    background-color: #e5edf5;
+    padding-bottom: 50px;
+}
+#questions .questions-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#questions .questions-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#questions .questions-title  h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#questions .accordion-item button{
+    color: var(--main-color);
+}
+
+
+/* end question */
+
+/* start gallery */
+
+#gallery .gallery-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#gallery .gallery-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#gallery .gallery-title  h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#gallery .gallery-img{
+    overflow: hidden;
+}
+#gallery .gallery-img img{
+    transition: 1s all;
+
+}
+#gallery .gallery-img:hover img{
+    scale: 1.5;
+}
+/* end gallery */
+
+
+/* start contact */
+#contact{
+    padding-bottom: 50px;
+}
+#contact .contact-title h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+#contact .contact-title h2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: 45%;
+}
+#contact .contact-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: 48%;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 300px;
+}
+#contact .loc-info span i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a0bcd5;
+    color: white;
+    transition: 0.5s all;
+}
+#contact .loc-info:hover i{
+    background-color: var(--sec-color);
+
+}
+#contact .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #054db8;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+/* End contact */
+
+
+/* start footer */
+
+#footer{
+    background-color: #e5edf5;
+    padding-block: 30px;
+}
+/* end footer */
